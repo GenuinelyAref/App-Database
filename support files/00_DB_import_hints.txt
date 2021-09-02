@@ -1,0 +1,33 @@
+Importing Hints
+1. Check .csv for extra lines!!
+2. If you have Boolean values, 0 is False, 1 is True
+3. Check # of columns
+4. Make sure data is *still* sorted by ID
+5. Remember to skip first row
+
+Process
+1. Put data in 3rd normal form (use a spreadsheet)
+2. When using a lookup, make sure data is alphabetical
+3. Save tables as .csv files and remove any extra rows (open in notepad)
+4. Create database tables
+	- table names should not have spaces (no caps, no gaps = easy)
+	- column names can have spaces if desired
+	- for decimal values, specify the length and number of decimal points, for money, this might be (6, 2 ie: $1,000.00 to 2 dp)
+5. Create first page...
+	- config file
+	- basic layout (html / css)
+	- top bit needs database connection code
+	- split into topbit, 'main div', bottombit
+6. Create 'allentries.php' using JOIN query
+7. Create other queries / search capability
+8. Create Data entry form / forms
+9. Boolean entries into data should NOT have speech marks
+
+Error Checking (basic)
+10. Use type="number" min=# to validate fields which need to include numbers.
+
+Error Checking (refined)
+- realise that basic error checking only gives error messages when users try and hit <submit> and then its one error at a time which is annoying.  Replace this with php error messages and formatted red boxes so that users can fix all their mistakes at once.
+ie: we trialled html error checking, trialled php checking and have realised that in most cases php checking is better.
+
+Success Page: Remember to use join query on add_success and put in $count so that you can recycle results.php.  Also, any numbers should be equals (=) not 'like'.  
