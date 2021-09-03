@@ -26,11 +26,11 @@ body {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "logo banner"
         "side main"
         "foot foot";
-        
+
     background-color: #fff;
     grid-gap: 4px;
     }
@@ -60,8 +60,8 @@ body {
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
-    
-    
+
+
 }
 
 .banner {
@@ -109,9 +109,9 @@ h1, h2, h3, h4 {
 
 /* links in page */
 
-a:link{color: #d6d3d7;}
-a:visited{color: #ccc;}
-a:hover{color: #dfcfbc;}
+a:link{color: #264306;}
+a:visited{color: #5b7f31;}
+a:hover{color: #8F5F14;}
 
 /* side links */
 a.side {
@@ -140,14 +140,3 @@ a.side:hover {color:#8a1737; }
     border-radius: 5px;
     padding: 20px;
     }
-
-
-
-
-
-
-
-
-
-
-
