@@ -102,6 +102,8 @@ h1, h2, h3, h4 {
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
     color: #593849;
+    font-size: 23px;
+    padding-bottom: 15px;
     font-weight: bold;
 }
 
@@ -140,3 +142,30 @@ a.side:hover {color:#8a1737; }
     border-radius: 5px;
     padding: 20px;
     }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* stars code taken from https://codepen.io/Bluetidepro/pen/GkpEa */
+.star-ratings-sprite {
+  background: url("../images/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  /* margin: 0 auto; */
+
+}
+
+.star-ratings-sprite-rating {
+    background: url("../images/star-rating-sprite.png") repeat-x;
+    background-position: 0%;
+    background-position: 0 100%;
+    float: left;
+    height: 21px;
+    display: block;
+}
