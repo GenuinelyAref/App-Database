@@ -169,3 +169,84 @@ a.side:hover {color:#8a1737; }
     height: 21px;
     display: block;
 }
+
+/* side form formatting */
+
+.searchform {
+  width: 250px;
+  margin: 5px;
+}
+
+.search {
+  padding: 8px 15px;
+  background: #fff;
+  border: 0px solid #dbdbdb;
+  width: 200px;
+}
+
+.submit {
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 45px;
+  left: -1px;
+  background-color: #636263;
+  border: 1px solid #636263;
+  border-radius: 0 5px 5px 0;
+}
+
+input[type="submit"]:hover {
+  background-color: #000;
+}
+
+input.search[type=text], select {
+  width: 200px;
+}
+
+input {
+  height: 40px;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.free {
+  width: 245px;
+  border-radius: 5px;
+  font-size: 105%;
+}
+
+.special_search {
+  color: #fff;
+}
+
+.advanced-frame {
+  border-radius: 10px;
+  background-color: #f4ff7c;
+  border: solid 1px #4f570b;
+  padding: 5px;
+}
+
+.advanced-button {
+  margin: auto;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #2F480D;
+  font-size: 105%;
+}
+
+.adv {
+  width: 95%;
+  margin-bottom: 5px;
+}
+
+select {
+  height: 40px;
+}
+
+.adv-text {
+  vertical-align: middle;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
