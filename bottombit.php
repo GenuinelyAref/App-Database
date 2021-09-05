@@ -40,7 +40,7 @@
                   <!-- Genre Dropdown -->
                   <select class="search adv" name="genre">
 
-                      <option disabled value="" selected>Genre...</option>
+                      <option value="" selected>Genre...</option>
 
 
                       <!-- get options from database -->
@@ -74,19 +74,60 @@
                     </div> <!-- close input box -->
 
                   </div> <!-- close cost flex container -->
+
                   <!-- No In App Purchases -->
+                  <input class="adv-text" type="checkbox" name="in_app"
+                  value="0">No In-App Purchases
 
                   <!-- Rating -->
+                  <div class="flex-container">
+                      <div class="adv-text">
+                        User Rating:
+                      </div> <!-- close rating label div-->
+
+                      <div>
+                        <select class="search adv" name="rating_label">
+                          <option selected value="">Choose...</option>
+                          <option value="At least">At least</option>
+                          <option value="At most">At most</option>
+                        </select>
+                      </div> <!-- close rating drop down div-->
+
+                      <div>
+                        <input class="adv" type="text" name="rating" size="2"
+                        value="" placeholder="" maxlength="1"/>
+                      </div> <!-- close rating amount div-->
+
+                  </div>
 
                   <!-- Age -->
+                  <div class="flex-container">
+                      <div class="adv-text">
+                        Age Rating:
+                      </div> <!-- close age rating label div -->
+
+                      <div>
+                        <select class="search adv" name="age_rating_label">
+                          <option selected value="">Choose...</option>
+                          <option value="At least">At least</option>
+                          <option value="At most">At most</option>
+                        </select>
+                      </div> <!-- close age rating drop down div-->
+
+                      <div>
+                        <input class="adv" type="text" name="age_rating" size="2"
+                        value="" placeholder="" maxlength="2"/>
+                      </div> <!-- close age rating amount div-->
+
+                  </div>
 
                   <!-- Search button / submit query -->
-                  <input class="submit advanced-button" type="submit"
+                  <input class="submit advanced-button special_search" type="submit"
                   name="advanced" value="Search &nbsp; &#xf002;" />
 
               </form>
 
-          </div> <!-- advanced fram -->
+          </div> <!-- advanced frame -->
 
         </div> <!-- / side bar -->
 
