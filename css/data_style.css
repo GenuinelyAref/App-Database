@@ -250,3 +250,8 @@ select {
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.adv-cost {
+  width: 90%;
+  margin-bottom: 5px;
+}
