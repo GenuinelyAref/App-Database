@@ -24,11 +24,10 @@
            <br />
 
            <div class="advanced-frame">
-              <h2>Advanced Search</h2>
+              <h2 align="middle">Advanced Search</h2>
 
               <form class="searchform" method="post" action="advanced.php"
               enctype="multipart/form-data">
-                  <p>Form goes here...</p>
 
                   <input class="adv" type="text" name="app_name" size="40"
                   value="" placeholder="App Name / Title..."/>
@@ -69,7 +68,7 @@
                     </div> <!-- close cost label -->
 
                     <div>
-                      <input class="adv" type="text" name="cost" size="40"
+                      <input class="adv-cost" type="text" name="cost"
                       value="" placeholder="$..."/>
                     </div> <!-- close input box -->
 
@@ -82,7 +81,7 @@
                   <!-- Rating -->
                   <div class="flex-container">
                       <div class="adv-text">
-                        User Rating:
+                        Rating:
                       </div> <!-- close rating label div-->
 
                       <div>
@@ -94,7 +93,7 @@
                       </div> <!-- close rating drop down div-->
 
                       <div>
-                        <input class="adv" type="text" name="rating" size="2"
+                        <input class="adv adv-cost" type="text" name="rating" size="2"
                         value="" placeholder="" maxlength="1"/>
                       </div> <!-- close rating amount div-->
 
@@ -103,7 +102,7 @@
                   <!-- Age -->
                   <div class="flex-container">
                       <div class="adv-text">
-                        Age Rating:
+                        Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       </div> <!-- close age rating label div -->
 
                       <div>
@@ -115,7 +114,7 @@
                       </div> <!-- close age rating drop down div-->
 
                       <div>
-                        <input class="adv" type="text" name="age_rating" size="2"
+                        <input class="adv adv-cost" type="text" name="age_rating" size="2"
                         value="" placeholder="" maxlength="2"/>
                       </div> <!-- close age rating amount div-->
 
