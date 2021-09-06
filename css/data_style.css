@@ -240,6 +240,7 @@ input {
   margin-bottom: 5px;
 }
 
+/* controls height of options in dropdown menus */
 select {
   height: 40px;
 }
@@ -254,4 +255,23 @@ select {
 .adv-cost {
   width: 90%;
   margin-bottom: 5px;
+}
+
+/* makes sure that the checkbox and text are on the same line */
+input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+
+/* put radio buttons next to each other in add entry form */
+input[type="radio"] {
+  height: 0;
+  width: auto;
+  display: inline;;
+}
+
+/* add entry page styling */
+.add-entry {
+  max-width: 550px;
+  margin: auto;
 }
