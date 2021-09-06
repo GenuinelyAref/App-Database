@@ -1,6 +1,6 @@
         <div class="box side">
 
-           <h2>Add an App |
+           <h2><a href="addentry.php">Add an App</a> |
               <a class="side" href="showall.php">Show All</a></h2>
 
            <form class="searchform" method="post"
@@ -123,6 +123,9 @@
                   <!-- Search button / submit query -->
                   <input class="submit advanced-button special_search" type="submit"
                   name="advanced" value="Search &nbsp; &#xf002;" />
+
+                  <!-- line break for visual appeal -->
+                  <br />
 
               </form>
 
