@@ -46,6 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- Genre dropdown (required) -->
 
                     <!-- Developer name (required)-->
+                    <input class="add-field <?php echo $developer; ?>" type="text" name="developer"
+                    value="<?php echo $developer; ?>" placeholder="Developer Name (requied) ..."/>
 
                     <!-- Age (set to 0 if left blank) -->
 
