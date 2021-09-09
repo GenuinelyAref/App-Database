@@ -36,6 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     value="<?php echo $app_name; ?>" placeholder="App Name (requied) ..."/>
 
                     <!-- Subtitle (optional) -->
+                    <input class="add-field" type="text" name="subtitle"
+                    value="<?php echo $subtitle; ?>" placeholder="Subtitle (optional) ..."/>
 
                     <!-- URL (required, must start with http://) -->
 
