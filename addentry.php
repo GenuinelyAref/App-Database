@@ -50,6 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     value="<?php echo $developer; ?>" placeholder="Developer Name (requied) ..."/>
 
                     <!-- Age (set to 0 if left blank) -->
+                    <input class="add-field" type="text" name="age"
+                    value="<?php echo $age; ?>" placeholder="Suitable for ages (0 for all)"/>
 
                     <!-- Rating (Number between 0 - 5, 1dp) -->
                     <div>
@@ -61,6 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- # of ratings (integer more than 0) -->
 
                     <!-- Cost (decimal 2dp, must be more than 0) -->
+                    <input class="add-field" type="text" name="cost"
+                    value="<?php echo $cost; ?>" placeholder="Cost (number only)"/>
 
                     <!-- In app purchases radio buttons -->
 
