@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <!-- App Name (required) -->
                     <input class="add-field" type="text" name="app_name"
-                    value="<?php echo $app_name; ?>" required placeholder="App Name (requied) ..."/>
+                    value="<?php echo $app_name; ?>" placeholder="App Name (requied) ..."/>
 
                     <!-- Subtitle (optional) -->
 
