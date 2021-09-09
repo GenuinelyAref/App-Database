@@ -55,12 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <!-- Rating (Number between 0 - 5, 1dp) -->
                     <div>
-                        <input class="add-field" type="number" name="rating"
-                        value="<?php echo $rating; ?>" required step="0.1"
+                        <input class="add-field" type="text" name="rating"
+                        value="<?php echo $rating; ?>" step="0.1"
                         min="0" max="5" placeholder="Rating (0-5)"/>
                     </div>
 
                     <!-- # of ratings (integer more than 0) -->
+                    <input class="add-field" type="text" name="rating"
+                    value="<?php echo $rate_count; ?>" placeholder="# of Ratings"/>
 
                     <!-- Cost (decimal 2dp, must be more than 0) -->
                     <input class="add-field" type="text" name="cost"
