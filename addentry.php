@@ -40,6 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     value="<?php echo $subtitle; ?>" placeholder="Subtitle (optional) ..."/>
 
                     <!-- URL (required, must start with http://) -->
+                    <input class="add-field <?php echo $url_field; ?>" type="text" name="url"
+                    value="<?php echo $url; ?>" placeholder="URL (requied) ..."/>
 
                     <!-- Genre dropdown (required) -->
 
