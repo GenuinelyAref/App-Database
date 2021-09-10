@@ -44,9 +44,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     value="<?php echo $url; ?>" placeholder="URL (requied) ..."/>
 
                     <!-- Genre dropdown (required) -->
+                    <select class="adv" name="genre">
+                      <!-- first / selected option -->
+
+                      <?php
+                      if ($genreID == "") {
+                        ?>
+                        <option value="" selected>Genre (Choose something) ...
+                        </option>
+                        <?php
+                      }
+                      else {
+                        ?>
+                        <option value="<?php echo $genreID; ?>" selected>
+                        <?php echo $genre; ?></option> <?php
+                      }
+                      ?>
+
+                      <!-- get options from database -->
+                      <?php
+                      do {
+                        ?>
+                          <option value="<?php echo $genre_rs['GenreID']; ?>">
+                          <?php echo $genre_rs['Genre']; ?></option>
+                        <?php
+                      } // end genre do loop
+
+                      while ($genre_rs=mysqli_fetch_assoc($genre_query))
+                    ?>
+
+                    </select>
 
                     <!-- Developer name (required)-->
-                    <input class="add-field <?php echo $developer; ?>" type="text" name="developer"
+                    <input class="add-field <?php echo $developer_field; ?>" type="text" name="developer"
                     value="<?php echo $developer; ?>" placeholder="Developer Name (requied) ..."/>
 
                     <!-- Age (set to 0 if left blank) -->
@@ -61,16 +91,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
 
                     <!-- # of ratings (integer more than 0) -->
-                    <input class="add-field" type="text" name="rating"
+                    <input class="add-field" type="text" name="rating_count"
                     value="<?php echo $rate_count; ?>" placeholder="# of Ratings"/>
 
                     <!-- Cost (decimal 2dp, must be more than 0) -->
                     <input class="add-field" type="text" name="cost"
                     value="<?php echo $cost; ?>" placeholder="Cost (number only)"/>
 
+                    <!-- line break -->
+                    <br /><br />
+
                     <!-- In app purchases radio buttons -->
+                    <div>
+                        <b>In App Purchases: </b>
+                        <!-- defaults to 'yes' -->
+                        <!-- note: value in database is boolean, so use 1's and 0's -->
+                        <?php
+                        if ($in_app == 1) {
+                          // default to yes (boolean value of 1)
+                          ?>
+                          <input type="radio" name="in_app" value="1" checked="checked"/> Yes
+                          <input type="radio" name="in_app" value="0"/> No
+                          <?php
+                        } // end in app purchases if statement
+                        else {
+                          ?>
+                          <input type="radio" name="in_app" value="1" /> Yes
+                          <input type="radio" name="in_app" value="0" checked="checked"/> No
+                          <?php
+                        } // end in app purchases else statement
+                        ?>
+
+                    </div> <!-- close in-app purchases radio button div -->
+
+                    <!-- line break -->
+                    <br />
 
                     <!-- Description text area -->
+                    <textarea class="add-field <?php echo $description_field; ?>"
+                    name="description" placeholder="Description..." rows="6"></textarea>
 
                     <!-- Submit button -->
                     <p>
