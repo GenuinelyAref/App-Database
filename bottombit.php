@@ -134,7 +134,7 @@
         </div> <!-- / side bar -->
 
         <div class="box footer">
-            CC GTT 20XX
+            CC Aref Osman 2021
         </div> <!-- / footer -->
 
 
