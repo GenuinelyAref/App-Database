@@ -265,9 +265,9 @@ input[type="checkbox"] {
 
 /* put radio buttons next to each other in add entry form */
 input[type="radio"] {
-  height: 0;
+  height: auto;
   width: auto;
-  display: inline;;
+  display: inline;
 }
 
 /* add entry page styling */
