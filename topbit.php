@@ -20,7 +20,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="games, apps, ">
-    <meta name="GTT" content="Game / App Database">
+    <meta name="Aref Osman" content="Game / App Database">
     <meta name="keywords" content="games, apps, ratings">
 
     <title>Game Database</title>
